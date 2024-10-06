@@ -12,6 +12,8 @@ Pre-designed layouts for various use cases (authorize screens, animations, etc.)
 ## Items
 <details>
 <summary><strong>Auto-hide BottomNavigationBar</strong></summary>
+
 AutoHideBottomNavigation is a Flutter widget that hides the bottom navigation bar when scrolling down and shows it when scrolling up, using a ScrollController to detect scroll direction.
-[![Check out the Flutter UI Kits in Action](https://yourgiflink.com/sample.gif)](https://yourlink.com)
+
+[![Check out the Flutter UI Kits in Action](https://github.com/SepehrFakoori/Flutter-UI-Kits/blob/95eff2a8279f46708d28c509c75c62be4c7f42a5/assets/output_files/auto_hide_bottom_nav.gif)]([https://yourlink.com](https://github.com/SepehrFakoori/Flutter-UI-Kits/tree/95eff2a8279f46708d28c509c75c62be4c7f42a5/lib/screens/auto_hide_bottom_navigation))
 </details>
