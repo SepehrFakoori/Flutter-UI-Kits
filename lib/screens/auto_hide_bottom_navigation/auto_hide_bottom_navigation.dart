@@ -102,7 +102,6 @@ class _ItemContainer extends StatelessWidget {
 
   const _ItemContainer(
     this._index, {
-    super.key,
     required this.phoneHeight,
     required this.phoneWidth,
   });
@@ -129,9 +128,7 @@ class _ItemContainer extends StatelessWidget {
 }
 
 class _BottomNavigation extends StatelessWidget {
-  const _BottomNavigation({
-    super.key,
-  });
+  const _BottomNavigation();
 
   @override
   Widget build(BuildContext context) {
