@@ -95,6 +95,7 @@ class FluidAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.sizeOf(context);
     final phoneWidth = size.width; // Phone's width (Uses as AppBar width)
+    final statusBarHeight = MediaQuery.of(context).viewPadding.top; // Get status bar height
 
     return Stack(
       children: [
@@ -112,6 +113,7 @@ class FluidAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ),
         Container(
+          padding: EdgeInsets.only(top: statusBarHeight), // Space from status bar
           width: phoneWidth,
           color: Colors.transparent,
           child: const Center(
