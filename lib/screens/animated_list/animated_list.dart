@@ -38,7 +38,7 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
     screenWidth = MediaQuery.sizeOf(context).width;
 
     return Scaffold(
-      backgroundColor: Colors.purple,
+      backgroundColor: const Color(0xffFAFAFA),
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
@@ -46,10 +46,10 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w600,
-            color: Colors.white,
+            color: Color(0xffFAFAFA),
           ),
         ),
-        backgroundColor: Colors.purple,
+        backgroundColor: const Color(0xff007AFF),
         shadowColor: Colors.black54,
         elevation: 10,
       ),
@@ -105,8 +105,19 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
         horizontal: screenWidth / 20,
       ),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: const Color(0xffFAFAFA),
         borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+            color: Color.fromRGBO(136, 165, 191, 0.48),
+            blurRadius: 16,
+            spreadRadius: 0,
+            offset: Offset(
+              6,
+              2,
+            ),
+          ),
+        ],
       ),
       child: Row(
         spacing: 10,
@@ -116,7 +127,7 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
             height: 40,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.purple,
+              color: const Color(0xff007AFF),
             ),
             child: Center(
               child: Text(
