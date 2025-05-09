@@ -95,6 +95,7 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
       height: 55,
       width: screenWidth,
       curve: Curves.easeInOut,
+      // Here can change the speed of animation
       duration: Duration(milliseconds: 300 + (index * 200)),
       transform:
           Matrix4.translationValues(startAnimation ? 0 : screenWidth, 20, 0),
